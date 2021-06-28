@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="maini">
+    <file>system/images/upload.png</file>
+    <file>system/images/other.jpg</file>
+    <file>system/images/ocr.jpg</file>
+  </qresource>
+</RCC>

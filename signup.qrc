@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="img">
+    <file>system/images/DataSci.png</file>
+  </qresource>
+</RCC>

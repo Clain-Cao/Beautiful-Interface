@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="lay">
+    <file>system/images/qq.jpeg</file>
+    <file>system/images/AI.jpeg</file>
+  </qresource>
+</RCC>

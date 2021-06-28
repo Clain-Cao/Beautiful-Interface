@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1150</width>
+    <height>870</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>100000</width>
+    <height>100000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/lay/system/images/qq.jpeg</normaloff>:/lay/system/images/qq.jpeg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Author : Caohaiming */
+background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>1150</width>
+     <height>841</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>900</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>10000</width>
+     <height>10000</height>
+    </size>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="toolTipDuration">
+    <number>-1</number>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::pane{
+	border:none;
+}
+QTabWidget::tab-bar{
+        alignment:up;
+}
+QTabBar::tab{
+	background:transparent;
+	/*color:white;*/
+	/*min-width:30ex;
+	min-height:10ex;*/
+}
+QTabBar::tab:hover{
+	background:rgb(255, 255, 255);
+}
+QTabBar::tab:pressed{
+	padding-left : 1px;
+	padding-top : 1px;
+}</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>70</width>
+     <height>70</height>
+    </size>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideLeft</enum>
+   </property>
+   <property name="documentMode">
+    <bool>false</bool>
+   </property>
+   <property name="tabsClosable">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="tabBarAutoHide">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="upLoadTab">
+    <property name="styleSheet">
+     <string notr="true">#upLoadTab{
+background-image: url(:/img/system/images/DataSci.png);
+}</string>
+    </property>
+    <attribute name="icon">
+     <iconset resource="main.qrc">
+      <normaloff>:/maini/system/images/upload.png</normaloff>:/maini/system/images/upload.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string/>
+    </attribute>
+    <widget class="QLabel" name="SourceImage">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>561</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border: 2px solid rgb(132, 132, 132);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NewImage">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>50</y>
+       <width>561</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border: 2px solid rgb(132, 132, 132);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>570</y>
+       <width>551</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*background-color: rgb(255, 255, 255);*/
+font: 12pt &quot;Cambria&quot;;
+/*border: 2px solid rgb(132, 132, 132);*/
+background-color : transparent;
+color : white;
+border : None</string>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cambria'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SourceLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>561</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : transparent;
+color : white;
+/*font-size : 20px;*/</string>
+     </property>
+     <property name="text">
+      <string>Source Image</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DistImage">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>10</y>
+       <width>561</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : transparent;
+color : white;
+/*font-size : 20px;*/</string>
+     </property>
+     <property name="text">
+      <string>Target Image</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SrcInfo">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>530</y>
+       <width>551</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : transparent;
+color : white;
+/*font-size : 20px;*/</string>
+     </property>
+     <property name="text">
+      <string>Parameter Information</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="UpLoadButton">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>570</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>上传</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="GenerateButton">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>570</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>生成标记图像</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SaveButton">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>710</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>保存生成结果</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="UploadOpenAugmentationButton">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>640</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>图像增强开启</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="UploadParameterSettingButton">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>640</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>参数设置</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="OCRTab">
+    <property name="styleSheet">
+     <string notr="true">#OCRTab{
+background-image: url(:/img/system/images/DataSci.png);
+}</string>
+    </property>
+    <attribute name="icon">
+     <iconset>
+      <normaloff>system/images/ocr.jpg</normaloff>system/images/ocr.jpg</iconset>
+    </attribute>
+    <attribute name="title">
+     <string/>
+    </attribute>
+    <widget class="QLabel" name="displayImage">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1131</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid rgb(132, 132, 132);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="CaptureButton">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>650</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>摄像头开启</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="detectButton">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>650</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>实时检测开启</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AugmentButton">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>710</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>图像增强开启</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ParameterSettingButton">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>710</y>
+       <width>250</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>参数设置</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="realtime_textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>650</y>
+       <width>551</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*background-color: rgb(255, 255, 255);*/
+font: 12pt &quot;Cambria&quot;;
+/*border: 2px solid rgb(132, 132, 132);*/
+background-color : transparent;
+color : white;
+border : None</string>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cambria'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="otherTab">
+    <property name="styleSheet">
+     <string notr="true">#otherTab{
+background-image: url(:/img/system/images/DataSci.png);
+}</string>
+    </property>
+    <attribute name="icon">
+     <iconset>
+      <normaloff>system/images/other.jpg</normaloff>system/images/other.jpg</iconset>
+    </attribute>
+    <attribute name="title">
+     <string/>
+    </attribute>
+    <widget class="QLabel" name="FaceDisplayImage">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1130</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid rgb(132, 132, 132);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="FaceDetectButton">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>710</y>
+       <width>351</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>实时检测开启</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="FaceCaptureButton">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>710</y>
+       <width>351</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background: transparent;
+    height:30px;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+	font-size : 22px;
+}
+QPushButton:hover {
+    /*background-color: #0000FF;*/
+	
+    border-radius: 6px;
+    /*color:white;*/
+	font-size : 24px;
+}
+QPushButton:pressed {
+	
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+	border: 2px solid rgb(80,80,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>摄像头开启</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="menu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>600</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>10000</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 50, 0, 255), stop:0.05 rgba(0, 80, 0, 255), stop:0.36 rgba(0, 130, 0, 255), stop:0.6 rgba(0, 180, 0, 255), stop:0.75 rgba(0, 200, 0, 255), stop:0.79 rgba(0, 220, 0, 255), stop:0.86 rgba(0, 240, 0, 255), stop:0.935 rgba(0, 252, 0, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>0</y>
+      <width>41</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>29</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 0), stop:1 rgb(255, 255, 255));
+    border: none;
+	background : transparent;
+	border-radius:1px;
+}
+/*悬停*/
+QPushButton:hover {
+    color: grey;
+}
+/*鼠标按下不放*/
+QPushButton:pressed {
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+    </property>
+    <property name="text">
+     <string>×</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minButton">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>-10</y>
+      <width>41</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>29</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Webdings</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 0), stop:1 rgb(255, 255, 255));
+    border: none;
+	background : transparent;
+}
+/*悬停*/
+QPushButton:hover {
+    color: grey;
+}
+/*鼠标按下不放*/
+QPushButton:pressed {
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="main.qrc"/>
+  <include location="icon.qrc"/>
+  <include location="signup.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>880</x>
+     <y>14</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>minButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>840</x>
+     <y>4</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
