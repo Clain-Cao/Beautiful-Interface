@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\info.ui'
+# Form implementation generated from reading ui file 'info.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -27,13 +27,13 @@ class Ui_Info(object):
         Info.setFont(font)
         Info.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(".\\system/images/qq.jpeg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("system/images/qq.jpeg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Info.setWindowIcon(icon)
         Info.setAutoFillBackground(False)
         Info.setStyleSheet("/* Author : Coahiming */\n"
 "background-image: url(:/img/system/images/DataSci.png);")
         self.author = QtWidgets.QLabel(Info)
-        self.author.setGeometry(QtCore.QRect(60, 50, 191, 40))
+        self.author.setGeometry(QtCore.QRect(30, 50, 311, 40))
         font = QtGui.QFont()
         font.setFamily("Century Schoolbook")
         font.setPointSize(-1)
@@ -44,7 +44,7 @@ class Ui_Info(object):
         self.author.setAlignment(QtCore.Qt.AlignCenter)
         self.author.setObjectName("author")
         self.email = QtWidgets.QLabel(Info)
-        self.email.setGeometry(QtCore.QRect(60, 230, 471, 40))
+        self.email.setGeometry(QtCore.QRect(30, 230, 541, 40))
         font = QtGui.QFont()
         font.setFamily("Century Schoolbook")
         font.setPointSize(-1)
@@ -55,7 +55,7 @@ class Ui_Info(object):
         self.email.setAlignment(QtCore.Qt.AlignCenter)
         self.email.setObjectName("email")
         self.phone = QtWidgets.QLabel(Info)
-        self.phone.setGeometry(QtCore.QRect(270, 110, 261, 40))
+        self.phone.setGeometry(QtCore.QRect(350, 49, 221, 41))
         font = QtGui.QFont()
         font.setFamily("Century Schoolbook")
         font.setPointSize(-1)
@@ -66,7 +66,7 @@ class Ui_Info(object):
         self.phone.setAlignment(QtCore.Qt.AlignCenter)
         self.phone.setObjectName("phone")
         self.SchoolNumber = QtWidgets.QLabel(Info)
-        self.SchoolNumber.setGeometry(QtCore.QRect(60, 170, 471, 40))
+        self.SchoolNumber.setGeometry(QtCore.QRect(30, 170, 541, 40))
         font = QtGui.QFont()
         font.setFamily("Century Schoolbook")
         font.setPointSize(-1)
@@ -77,7 +77,7 @@ class Ui_Info(object):
         self.SchoolNumber.setAlignment(QtCore.Qt.AlignCenter)
         self.SchoolNumber.setObjectName("SchoolNumber")
         self.major = QtWidgets.QLabel(Info)
-        self.major.setGeometry(QtCore.QRect(260, 50, 271, 40))
+        self.major.setGeometry(QtCore.QRect(30, 110, 541, 40))
         font = QtGui.QFont()
         font.setFamily("Century Schoolbook")
         font.setPointSize(-1)
@@ -87,17 +87,6 @@ class Ui_Info(object):
         self.major.setStyleSheet("color : white;font-size : 20px;background : transparent;")
         self.major.setAlignment(QtCore.Qt.AlignCenter)
         self.major.setObjectName("major")
-        self.author_2 = QtWidgets.QLabel(Info)
-        self.author_2.setGeometry(QtCore.QRect(60, 110, 201, 40))
-        font = QtGui.QFont()
-        font.setFamily("Century Schoolbook")
-        font.setPointSize(-1)
-        font.setBold(True)
-        font.setWeight(75)
-        self.author_2.setFont(font)
-        self.author_2.setStyleSheet("color : white;font-size : 20px;background : transparent;")
-        self.author_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.author_2.setObjectName("author_2")
         self.returnLogin = QtWidgets.QPushButton(Info)
         self.returnLogin.setGeometry(QtCore.QRect(140, 310, 311, 41))
         self.returnLogin.setStyleSheet("QPushButton{\n"
@@ -132,12 +121,11 @@ class Ui_Info(object):
     def retranslateUi(self, Info):
         _translate = QtCore.QCoreApplication.translate
         Info.setWindowTitle(_translate("Info", "作者信息"))
-        self.author.setText(_translate("Info", "Author : 曹海铭"))
+        self.author.setText(_translate("Info", "Author : Cao Haiming"))
         self.email.setText(_translate("Info", "E-mail : hoiming.wk@foxmail.com"))
-        self.phone.setText(_translate("Info", "telephone : 18022178322"))
-        self.SchoolNumber.setText(_translate("Info", "school number : 201706020113"))
-        self.major.setText(_translate("Info", "major : 计算机科学与技术"))
-        self.author_2.setText(_translate("Info", "class : 计算机173"))
+        self.phone.setText(_translate("Info", "class : 计算机173"))
+        self.SchoolNumber.setText(_translate("Info", "School : Shaanxi University of Science & Technology"))
+        self.major.setText(_translate("Info", "Major : Computer Vision"))
         self.returnLogin.setText(_translate("Info", "返回"))
 import icon_rc
 import signup_rc
